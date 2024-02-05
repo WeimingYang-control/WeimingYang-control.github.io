@@ -11,9 +11,9 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* Ph.D. in Electrical and Computer Engineering, Univerisity of Macau, Macau, 2024 (expected)
+* M.S. in Electrical Engineering, Hanyang University, South Korea, 2019
+* B.E. in Electrical Engineering, Soonchunhyang University, South Korea, 2017
 
 Work experience
 ======
@@ -29,12 +29,12 @@ Work experience
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Matlab, Simulink
+* Python
+#  * Sub-skill 2.1
+#  * Sub-skill 2.2
+#  * Sub-skill 2.3
+* Latex
 
 Publications
 ======
