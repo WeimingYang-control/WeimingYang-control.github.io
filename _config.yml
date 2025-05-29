@@ -81,10 +81,10 @@ analytics:
 # Site Author
 author:
   name             : "Weiming Yang"
-  avatar           : "profile.png"
-  bio              : "PhD student at University of Macau in Electrical Computer Engineering"
+  avatar           : "weiming_yang_profile.jpg"
+  bio              : "PhD candidate at University of Macau in Electrical Computer Engineering"
   location         : "Macau"
-  employer         :
+  employer         : "University of Macau"
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=gsG1NyIAAAAJ&hl=zh-CN"
   email            :
