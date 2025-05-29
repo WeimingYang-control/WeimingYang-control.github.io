@@ -11,9 +11,9 @@ redirect_from:
 
 Education
 ======
-* Ph.D. in Electrical and Computer Engineering, Univerisity of Macau, Macau, 2024 (expected)
-* M.S. in Electrical Engineering, Hanyang University, Seoul, South Korea, 2019
-* B.E. in Electrical Engineering, Soonchunhyang University, Asan, South Korea, 2017
+* Ph.D. in Electrical and Computer Engineering, [Univerisity of Macau](https://www.um.edu.mo/), Macau, 2025 (expected)
+* M.S. in Electrical Engineering, [Hanyang University](https://www.hanyang.ac.kr/web/eng), Seoul, South Korea, 2019
+* B.E. in Electrical Engineering, [Soonchunhyang University](https://home.sch.ac.kr/en/index.jsp), Asan, South Korea, 2017
 
 Work experience
 ======
@@ -58,6 +58,9 @@ Publications
 Professional Service
 ======
 * Journal Reviewer
-    * IEEE Transactions on Automation Science and Engineering
+    * IEEE Transactions on Automation Science and Engineering (TASE)
+    * IEEE Robotics and Automation Letters (RA-L)
+    * Control Engineering Practice (CEP)
+    * IEEE Transactions on Systems, Man, and Cybernetics: Systems (TSMC)
 * Conference Reviewer
     * Chinese Control Conference (CCC)
