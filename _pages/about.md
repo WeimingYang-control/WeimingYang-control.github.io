@@ -10,6 +10,7 @@ redirect_from:
 
 {% include base_path %}
 
+<!-- About -->
 <section id="about-me" class="home-section">
   <h2>About Me</h2>
   <div class="about-feature">
@@ -30,6 +31,7 @@ redirect_from:
   </div>
 </section>
 
+<!-- News -->
 <section id="news" class="home-section">
   <h2>News</h2>
   <ul class="home-list">
@@ -40,12 +42,13 @@ redirect_from:
   </ul>
 </section>
 
+<!-- Research -->
 <section id="research" class="home-section">
   <h2>Research</h2>
   <div class="research-list">
     <article class="research-paper">
       <div class="research-paper__media">
-        <img src="{{ base_path }}/images/web_2.jpg" alt="Robust nonlinear 3D control of an inverted pendulum balanced on a quadrotor">
+        <img src="{{ base_path }}/images/web_1.jpg" alt="Robust nonlinear 3D control of an inverted pendulum balanced on a quadrotor">
       </div>
       <div class="research-paper__content">
         <h3><span class="research-paper__index">01</span> Robust nonlinear 3D control of an inverted pendulum balanced on a quadrotor</h3>
@@ -61,7 +64,7 @@ redirect_from:
     </article>
     <article class="research-paper">
       <div class="research-paper__media">
-        <img src="{{ base_path }}/images/web_3.jpg" alt="Output feedback control of an underactuated flying inverted pendulum">
+        <img src="{{ base_path }}/images/web_2.jpg" alt="Output feedback control of an underactuated flying inverted pendulum">
       </div>
       <div class="research-paper__content">
         <h3><span class="research-paper__index">02</span> Output feedback control of an underactuated flying inverted pendulum</h3>
@@ -76,7 +79,7 @@ redirect_from:
     </article>
     <article class="research-paper">
       <div class="research-paper__media">
-        <img src="{{ base_path }}/images/web_1.jpg" alt="Trajectory Generation and Extended High-Gain Observers Based Output Feedback Control for an Underactuated Flying Inverted Pendulum">
+        <img src="{{ base_path }}/images/web_3.jpg" alt="Trajectory Generation and Extended High-Gain Observers Based Output Feedback Control for an Underactuated Flying Inverted Pendulum">
       </div>
       <div class="research-paper__content">
         <h3><span class="research-paper__index">03</span> Trajectory Generation and Extended High-Gain Observers Based Output Feedback Control for an Underactuated Flying Inverted Pendulum</h3>
@@ -93,6 +96,7 @@ redirect_from:
   </div>
 </section>
 
+<!-- Invited Talks -->
 <section id="invited-talks" class="home-section">
   <h2>Invited Talks</h2>
   <div class="talk-card">
@@ -103,6 +107,7 @@ redirect_from:
   </div>
 </section>
 
+<!-- Visitors -->
 <section class="home-section home-section--stats">
   <h2>Visitors</h2>
   <div class="stats-layout stats-layout--single">
