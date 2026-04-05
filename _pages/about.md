@@ -11,7 +11,6 @@ redirect_from:
 {% include base_path %}
 
 <div class="home-hero">
-  <p class="home-hero__eyebrow">Electrical and Computer Engineering</p>
   <h1 class="home-hero__title">Weiming Yang</h1>
   <p class="home-hero__lead">
     I am a researcher working on nonlinear control, underactuated aerial systems, and experimental validation for robotic platforms. My current work focuses on robust control design, trajectory generation, and aggressive maneuvering for unmanned aerial vehicles and flying inverted pendulum systems.
@@ -48,30 +47,23 @@ redirect_from:
 
 <section id="research" class="home-section">
   <h2>Research</h2>
-  <div class="research-grid">
-    <article class="research-card">
-      <h3>Nonlinear Control for Underactuated Aerial Systems</h3>
+  <div class="research-feature">
+    <div class="research-feature__media">
+      <img src="{{ base_path }}/images/weiming_yang_profile.jpg" alt="Weiming Yang research profile">
+    </div>
+    <article class="research-feature__content">
+      <h3>Robust Nonlinear Control and Aerial Robotics</h3>
       <p>
-        I study control strategies for aerial platforms whose dynamics are strongly nonlinear and whose inputs are inherently constrained. The goal is to obtain controllers that remain stable, robust, and implementable in realistic conditions.
+        My research centers on nonlinear control design for underactuated aerial systems, especially platforms that must operate under strong coupling, limited actuation, and real-world uncertainties.
       </p>
-    </article>
-    <article class="research-card">
-      <h3>Flying Inverted Pendulum and Aggressive Maneuvers</h3>
       <p>
-        A major part of my work explores the flying inverted pendulum as a demanding benchmark for aerial robotics. This line of research combines balancing, motion planning, and aggressive flight in a single experimentally challenging platform.
+        One major direction of my work is the flying inverted pendulum, which serves as a demanding benchmark for balancing, planning, and aggressive maneuvering on quadrotor-based systems. I am interested not only in theoretical stability guarantees, but also in controllers that can be implemented and validated on physical hardware.
       </p>
-    </article>
-    <article class="research-card">
-      <h3>Trajectory Generation and Experimental Validation</h3>
       <p>
-        Beyond controller design, I am interested in building end-to-end experimental systems, including trajectory generation, path planning, and testbed implementation. I care about methods that transfer cleanly from theory to hardware.
+        I also work on trajectory generation, path planning, and experimental system integration, with the broader goal of making advanced control methods more reliable in practice.
       </p>
     </article>
   </div>
-  <p class="home-section__note">
-    A fuller list of publications is available on
-    {% if site.author.googlescholar %}<a href="{{ site.author.googlescholar }}">Google Scholar</a>{% else %}my publication pages{% endif %}.
-  </p>
 </section>
 
 <section id="invited-talks" class="home-section">
@@ -83,15 +75,31 @@ redirect_from:
   </div>
 </section>
 
-<section id="visitors" class="home-section home-section--visitors">
-  <h2>Visitors by Region</h2>
-  <div class="visitor-card">
-    <p>
-      This section is reserved for a region-level visitor widget so the homepage can show where visitors are coming from.
-      Because GitHub Pages is a static site, this module needs to be connected to a third-party counter service such as Flag Counter or ClustrMaps.
-    </p>
-    <p class="home-section__note">
-      The layout and anchor are in place here, so we can wire in a live region map or country counter next.
-    </p>
+<section class="home-section home-section--stats">
+  <h2>Statistics</h2>
+  <div class="metrics-grid">
+    <article class="metric-card">
+      <p class="metric-card__label">Google Scholar</p>
+      {% if site.data.scholar and site.data.scholar.citations %}
+      <p class="metric-card__value">{{ site.data.scholar.citations }}</p>
+      <p class="metric-card__meta">Total citations{% if site.data.scholar.updated %} | Updated {{ site.data.scholar.updated }}{% endif %}</p>
+      {% elsif site.author.scholar_citations and site.author.scholar_citations != "" %}
+      <p class="metric-card__value">{{ site.author.scholar_citations }}</p>
+      <p class="metric-card__meta">Total citations</p>
+      {% else %}
+      <p class="metric-card__value metric-card__value--link"><a href="{{ site.author.googlescholar }}">View profile</a></p>
+      <p class="metric-card__meta">{{ site.author.scholar_note }}</p>
+      {% endif %}
+    </article>
+    <article class="metric-card">
+      <p class="metric-card__label">Site Visits</p>
+      <p class="metric-card__value"><span id="busuanzi_value_site_pv">--</span></p>
+      <p class="metric-card__meta">Total page views</p>
+    </article>
+    <article class="metric-card">
+      <p class="metric-card__label">Visitors</p>
+      <p class="metric-card__value"><span id="busuanzi_value_site_uv">--</span></p>
+      <p class="metric-card__meta">Unique visitors</p>
+    </article>
   </div>
 </section>

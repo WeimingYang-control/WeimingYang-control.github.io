@@ -1,0 +1,41 @@
+name: Update Scholar Stats
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 2 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-scholar-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r google_scholar_crawler/requirements.txt
+
+      - name: Fetch Google Scholar data
+        env:
+          GOOGLE_SCHOLAR_ID: gsG1NyIAAAAJ
+        run: python google_scholar_crawler/main.py
+
+      - name: Update site data
+        run: python google_scholar_crawler/update_site_data.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/scholar.json results/data.json results/data_shieldsio.json
+          git diff --cached --quiet || git commit -m "Update Google Scholar statistics"
+          git push

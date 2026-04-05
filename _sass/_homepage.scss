@@ -4,15 +4,6 @@
   border-bottom: 1px solid #e5e7eb;
 }
 
-.home-hero__eyebrow {
-  margin-bottom: 0.4rem;
-  color: #6b7280;
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
 .home-hero__title {
   margin: 0;
   color: #0f172a;
@@ -59,15 +50,8 @@
   line-height: 1.8;
 }
 
-.research-grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-}
-
-.research-card,
 .talk-card,
-.visitor-card {
+.metric-card {
   padding: 1.1rem 1.2rem;
   border: 1px solid #dbe4ee;
   border-radius: 12px;
@@ -75,19 +59,68 @@
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
 }
 
-.research-card h3 {
-  margin-top: 0;
-  margin-bottom: 0.7rem;
-  color: #12304a;
-  font-size: 1.05rem;
+.research-feature {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: minmax(220px, 300px) minmax(0, 1fr);
+  align-items: start;
 }
 
-.research-card p,
+.research-feature__media img {
+  display: block;
+  width: 100%;
+  border: 1px solid #dbe4ee;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.08);
+}
+
+.research-feature__content h3 {
+  margin-top: 0;
+  margin-bottom: 0.85rem;
+  color: #12304a;
+  font-size: 1.2rem;
+}
+
 .talk-card p,
-.visitor-card p,
+.research-feature__content p,
 .home-section p {
   color: #334155;
   line-height: 1.85;
+}
+
+.metrics-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.metric-card__label {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.metric-card__value {
+  margin: 0.35rem 0 0;
+  color: #0f172a;
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.metric-card__value--link {
+  font-size: 1.35rem;
+}
+
+.metric-card__meta {
+  margin: 0.45rem 0 0;
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 .home-section__note {
@@ -96,9 +129,29 @@
   font-size: 0.95rem;
 }
 
-.home-section--visitors {
+.home-section--stats {
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
+}
+
+.author-icon--googlescholar {
+  color: #4285f4;
+}
+
+.author-icon--researchgate {
+  color: #00ccbb;
+}
+
+.author-icon--orcid {
+  color: #a6ce39;
+}
+
+.author-icon--linkedin {
+  color: #0a66c2;
+}
+
+.author-icon--youtube {
+  color: #ff0033;
 }
 
 @media screen and (max-width: 768px) {
@@ -113,5 +166,9 @@
   .home-hero__lead {
     font-size: 1rem;
     line-height: 1.75;
+  }
+
+  .research-feature {
+    grid-template-columns: 1fr;
   }
 }
