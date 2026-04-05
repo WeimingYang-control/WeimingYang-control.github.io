@@ -17,6 +17,7 @@
   color: #334155;
   font-size: 1.05rem;
   line-height: 1.85;
+  text-align: justify;
 }
 
 .home-hero__actions {
@@ -48,6 +49,7 @@
   margin-bottom: 0.9rem;
   color: #334155;
   line-height: 1.8;
+  text-align: justify;
 }
 
 .talk-card,
@@ -126,6 +128,7 @@
   color: #64748b;
   font-size: 0.95rem;
   line-height: 1.6;
+  text-align: justify;
 }
 
 .metric-card--map {
@@ -138,12 +141,18 @@
   margin-top: 0.75rem;
 }
 
+.visitor-map iframe,
 .visitor-map img {
   display: block;
   width: 100%;
+  min-height: 300px;
   border: 1px solid #dbe4ee;
   border-radius: 12px;
   background: #fff;
+}
+
+.visitor-map img {
+  min-height: 0;
 }
 
 .visitor-map--placeholder {
@@ -196,6 +205,11 @@
 }
 
 .author__bio {
+  text-align: justify;
+}
+
+.author__urls li,
+.author__affiliation-text {
   text-align: justify;
 }
 

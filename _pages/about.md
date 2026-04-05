@@ -95,11 +95,12 @@ redirect_from:
     </article>
     <article class="metric-card metric-card--map">
       <p class="metric-card__label">Visitor Locations</p>
-      {% if site.clustrmaps.widget_page and site.clustrmaps.widget_image %}
-      <a class="visitor-map" href="{{ site.clustrmaps.widget_page }}" aria-label="ClustrMaps visitor locations">
-        <img src="{{ site.clustrmaps.widget_image }}" alt="ClustrMaps visitor location map">
-      </a>
-      <p class="metric-card__meta">Visitor locations from ClustrMaps.</p>
+      {% if site.clustrmaps.widget_page %}
+      <div class="visitor-map">
+        <iframe src="{{ site.clustrmaps.widget_page }}" title="Visitor location map" loading="lazy"></iframe>
+      </div>
+      <p class="metric-card__meta">Visitor locations and map view.</p>
+      <p class="metric-card__meta"><a href="{{ site.clustrmaps.widget_page }}">Open full visitor map</a></p>
       {% else %}
       <div class="visitor-map visitor-map--placeholder">
         <p class="visitor-map__placeholder-title">ClustrMaps widget ready</p>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="avatarClip">
+      <ellipse cx="32" cy="32" rx="24" ry="20"/>
+    </clipPath>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#f8fafc"/>
+  <image
+    href="/images/weiming_yang_profile.jpg"
+    x="8"
+    y="10"
+    width="48"
+    height="44"
+    preserveAspectRatio="xMidYMid slice"
+    clip-path="url(#avatarClip)"
+  />
+  <ellipse cx="32" cy="32" rx="24" ry="20" fill="none" stroke="#cbd5e1" stroke-width="2"/>
+</svg>
