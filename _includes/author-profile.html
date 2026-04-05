@@ -17,14 +17,6 @@
   <div class="author__content">
     <h3 class="author__name">{{ author.name }}</h3>
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
-    {% if author.employer_url %}
-    <p class="author__affiliation">
-      <a href="{{ author.employer_url }}" class="author__affiliation-badge" aria-label="National University of Singapore">
-        <span class="author__affiliation-mark">NUS</span>
-        <span class="author__affiliation-text">National University of Singapore</span>
-      </a>
-    </p>
-    {% endif %}
   </div>
 
   <div class="author__urls-wrapper">
