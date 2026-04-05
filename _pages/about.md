@@ -10,19 +10,6 @@ redirect_from:
 
 {% include base_path %}
 
-<div class="home-hero">
-  <h1 class="home-hero__title">Weiming Yang</h1>
-  <p class="home-hero__lead">
-    I am a researcher working on nonlinear control, underactuated aerial systems, and experimental validation for robotic platforms. My current work focuses on robust control design, trajectory generation, and aggressive maneuvering for unmanned aerial vehicles and flying inverted pendulum systems.
-  </p>
-  <div class="home-hero__actions">
-    <a class="btn btn--primary" href="{{ base_path }}/cv/">CV</a>
-    <a class="btn btn--inverse" href="{{ base_path }}/publications/">Publications</a>
-    {% if site.author.googlescholar %}<a class="btn btn--light-outline" href="{{ site.author.googlescholar }}">Google Scholar</a>{% endif %}
-    {% if site.author.researchgate %}<a class="btn btn--light-outline" href="{{ site.author.researchgate }}">ResearchGate</a>{% endif %}
-  </div>
-</div>
-
 <section id="about-me" class="home-section">
   <h2>About Me</h2>
   <p>
@@ -41,28 +28,60 @@ redirect_from:
   <ul class="home-list">
     <li><strong>2025.10:</strong> Successfully obtained my <strong>Ph.D. degree</strong> from the <strong>University of Macau</strong>.</li>
     <li><strong>2025.11:</strong> Joined the <strong>National University of Singapore</strong> as a <strong>Research Fellow</strong>.</li>
-    <li><strong>Service:</strong> Reviewer for <strong>IEEE TASE</strong>, <strong>IEEE RA-L</strong>, <strong>Control Engineering Practice</strong>, and <strong>IEEE TSMC: Systems</strong>.</li>
     <li><strong>2025.12:</strong> Our manuscript titled <em>Trajectory Generation and Extended High-Gain Observers Based Output Feedback Control for an Underactuated Flying Inverted Pendulum</em> has been accepted for publication in <strong>IEEE TASE</strong>.</li>
+    <li><strong>Service:</strong> Reviewer for <strong>IEEE TASE</strong>, <strong>IEEE RA-L</strong>, <strong>Control Engineering Practice</strong>, and <strong>IEEE TSMC: Systems</strong>.</li>
   </ul>
 </section>
 
 <section id="research" class="home-section">
   <h2>Research</h2>
-  <div class="research-feature">
-    <div class="research-feature__media">
-      <img src="{{ base_path }}/images/weiming_yang_profile.jpg" alt="Weiming Yang research profile">
-    </div>
-    <article class="research-feature__content">
-      <h3>Robust Nonlinear Control and Aerial Robotics</h3>
-      <p>
-        My research centers on nonlinear control design for underactuated aerial systems, especially platforms that must operate under strong coupling, limited actuation, and real-world uncertainties.
-      </p>
-      <p>
-        One major direction of my work is the flying inverted pendulum, which serves as a demanding benchmark for balancing, planning, and aggressive maneuvering on quadrotor-based systems. I am interested not only in theoretical stability guarantees, but also in controllers that can be implemented and validated on physical hardware.
-      </p>
-      <p>
-        I also work on trajectory generation, path planning, and experimental system integration, with the broader goal of making advanced control methods more reliable in practice.
-      </p>
+  <div class="research-list">
+    <article class="research-paper">
+      <div class="research-paper__media">
+        <img src="{{ base_path }}/images/web_3.jpg" alt="Robust nonlinear 3D control of an inverted pendulum balanced on a quadrotor">
+      </div>
+      <div class="research-paper__content">
+        <h3>Robust nonlinear 3D control of an inverted pendulum balanced on a quadrotor</h3>
+        <p class="research-paper__venue"><em>Automatica</em>, 2024</p>
+        <div class="research-paper__links">
+          <a class="btn btn--primary btn--small" href="https://www.sciencedirect.com/science/article/abs/pii/S0005109823005022">Paper</a>
+          <a class="btn btn--inverse btn--small" href="https://www.youtube.com/watch?v=n9nVOPnf6h8">Video</a>
+        </div>
+        <p>
+          This work studies full three-dimensional trajectory tracking for a flying inverted pendulum balanced on a quadrotor under unknown constant disturbances. Instead of relying on linearization, it develops a robust nonlinear control strategy that coordinates pendulum translation, pendulum direction, and quadrotor attitude in a unified framework. The paper shows that the proposed controller can achieve asymptotic tracking while preserving upright balance in a highly coupled underactuated aerial system.
+        </p>
+      </div>
+    </article>
+    <article class="research-paper">
+      <div class="research-paper__media">
+        <img src="{{ base_path }}/images/web_1.jpg" alt="Output feedback control of an underactuated flying inverted pendulum">
+      </div>
+      <div class="research-paper__content">
+        <h3>Output feedback control of an underactuated flying inverted pendulum</h3>
+        <p class="research-paper__venue"><em>Control Engineering Practice</em>, 2025</p>
+        <div class="research-paper__links">
+          <a class="btn btn--primary btn--small" href="https://www.sciencedirect.com/science/article/abs/pii/S0967066125002369">Paper</a>
+        </div>
+        <p>
+          This paper tackles trajectory tracking for an underactuated flying inverted pendulum when direct measurements of all state variables are not available and constant external disturbances are present. A uniformly completely observable linear time-varying model is introduced, and a Kalman filter is used to estimate angular velocity, disturbances, and noise-filtered pendulum orientation measurements. These estimates are then embedded in a nonlinear backstepping output-feedback controller, with both simulations and experiments validating the resulting tracking performance.
+        </p>
+      </div>
+    </article>
+    <article class="research-paper">
+      <div class="research-paper__media">
+        <img src="{{ base_path }}/images/web_2.jpg" alt="Trajectory Generation and Extended High-Gain Observers Based Output Feedback Control for an Underactuated Flying Inverted Pendulum">
+      </div>
+      <div class="research-paper__content">
+        <h3>Trajectory Generation and Extended High-Gain Observers Based Output Feedback Control for an Underactuated Flying Inverted Pendulum</h3>
+        <p class="research-paper__venue"><em>IEEE Transactions on Automation Science and Engineering</em>, 2025</p>
+        <div class="research-paper__links">
+          <a class="btn btn--primary btn--small" href="https://ieeexplore.ieee.org/abstract/document/11318354">Paper</a>
+          <a class="btn btn--inverse btn--small" href="https://www.youtube.com/watch?v=iHm6r5wv8dk">Video</a>
+        </div>
+        <p>
+          This paper presents integrated trajectory generation and output-feedback control strategies for an underactuated flying inverted pendulum operating under unknown time-varying disturbances. It introduces two extended high-gain observers to independently estimate the pendulum’s linear and angular velocities, as well as the unknown disturbances, and embeds them within a nonlinear hierarchical Lyapunov-based control framework. By exploiting the differential flatness of the system, the work also develops a trajectory generation method for aggressive window-crossing maneuvers, with both simulations and experiments validating the agility, robustness, and precision of the proposed approach.
+        </p>
+      </div>
     </article>
   </div>
 </section>
@@ -95,11 +114,11 @@ redirect_from:
     </article>
     <article class="metric-card metric-card--map">
       <p class="metric-card__label">Visitor Locations</p>
-      {% if site.clustrmaps.widget_page %}
-      <div class="visitor-map">
-        <iframe src="{{ site.clustrmaps.widget_page }}" title="Visitor location map" loading="lazy"></iframe>
-      </div>
-      <p class="metric-card__meta">Visitor locations and map view.</p>
+      {% if site.clustrmaps.widget_page and site.clustrmaps.widget_image %}
+      <a class="visitor-map" href="{{ site.clustrmaps.widget_page }}" aria-label="Visitor location map">
+        <img src="{{ site.clustrmaps.widget_image }}" alt="Visitor location map">
+      </a>
+      <p class="metric-card__meta">Visitor locations from the site map.</p>
       <p class="metric-card__meta"><a href="{{ site.clustrmaps.widget_page }}">Open full visitor map</a></p>
       {% else %}
       <div class="visitor-map visitor-map--placeholder">
