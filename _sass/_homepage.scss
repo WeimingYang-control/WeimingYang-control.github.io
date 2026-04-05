@@ -87,12 +87,17 @@
 .home-section p {
   color: #334155;
   line-height: 1.85;
+  text-align: justify;
 }
 
-.metrics-grid {
+.home-list--talks {
+  margin-bottom: 0;
+}
+
+.stats-layout {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: minmax(200px, 260px) minmax(0, 1fr);
 }
 
 .metric-card__label {
@@ -121,6 +126,42 @@
   color: #64748b;
   font-size: 0.95rem;
   line-height: 1.6;
+}
+
+.metric-card--map {
+  display: flex;
+  flex-direction: column;
+}
+
+.visitor-map {
+  display: block;
+  margin-top: 0.75rem;
+}
+
+.visitor-map img {
+  display: block;
+  width: 100%;
+  border: 1px solid #dbe4ee;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.visitor-map--placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  padding: 1rem;
+  border: 1px dashed #cbd5e1;
+  border-radius: 12px;
+  background: #fff;
+  text-align: center;
+}
+
+.visitor-map__placeholder-title {
+  margin: 0 0 0.4rem;
+  color: #12304a;
+  font-weight: 700;
 }
 
 .home-section__note {
@@ -154,6 +195,47 @@
   color: #ff0033;
 }
 
+.author__bio {
+  text-align: justify;
+}
+
+.author__affiliation {
+  margin-top: 0.9rem;
+}
+
+.author__affiliation-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #d6dbe3;
+  border-radius: 999px;
+  background: #fff;
+  color: #0f172a;
+  text-decoration: none;
+}
+
+.author__affiliation-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.2rem;
+  height: 2.2rem;
+  padding: 0 0.45rem;
+  border-radius: 999px;
+  background: #003d7c;
+  color: #f7b500;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.author__affiliation-text {
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
 @media screen and (max-width: 768px) {
   .home-hero {
     padding-top: 0.75rem;
@@ -169,6 +251,10 @@
   }
 
   .research-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-layout {
     grid-template-columns: 1fr;
   }
 }

@@ -82,9 +82,10 @@ analytics:
 author:
   name             : "Weiming Yang"
   avatar           : "weiming_yang_profile.jpg"
-  bio              : "PhD candidate at University of Macau in Electrical Computer Engineering"
-  location         : "Macau"
-  employer         : "University of Macau"
+  bio              : "<strong>Research Fellow</strong> at the <strong>National University of Singapore</strong>, working on <strong>nonlinear control</strong>, <strong>aerial robotics</strong>, and <strong>underactuated systems</strong>."
+  location         : "Singapore"
+  employer         : "National University of Singapore"
+  employer_url     : "https://www.nus.edu.sg/"
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=gsG1NyIAAAAJ&hl=zh-CN"
   email            :
@@ -117,6 +118,11 @@ author:
   wikipedia        :
   scholar_citations: ""
   scholar_note     : "Citation metrics are updated on my Google Scholar profile."
+
+clustrmaps:
+  widget_page      : "https://mapmyvisitors.com/web/1c3ov"
+  widget_image     : "https://mapmyvisitors.com/map.png?d=evwslDcYpfXOVFwiuURQV0733GEiOyOJb2jgJadAtrA&cl=ffffff"
+  note             : "Visitor map is powered by MapMyVisitors."
 
 
 # Reading Files

@@ -26,22 +26,23 @@ redirect_from:
 <section id="about-me" class="home-section">
   <h2>About Me</h2>
   <p>
-    I am a Ph.D. candidate in Electrical and Computer Engineering at the University of Macau and a Research Assistant in the SCORE Lab. My research sits at the intersection of control theory and robotics, with an emphasis on systems that are nonlinear, underactuated, and difficult to operate reliably in the real world.
+    I am currently a <strong>Research Fellow at the National University of Singapore</strong>. My work sits at the intersection of <strong>control theory</strong> and <strong>robotics</strong>, with a particular emphasis on systems that are nonlinear, underactuated, and challenging to deploy reliably in real-world environments.
   </p>
   <p>
-    I am especially interested in aerial robotic systems, robust nonlinear control, and the full path from mathematical design to experimental deployment. Along the way, I have worked on flying inverted pendulum platforms, quadrotor-based systems, and trajectory generation methods for aggressive maneuvers.
+    My primary interests include <strong>aerial robotic systems</strong>, <strong>robust nonlinear control</strong>, and the full path from mathematical design to experimental deployment. Along the way, I have worked on <strong>flying inverted pendulum platforms</strong>, <strong>quadrotor-based systems</strong>, and <strong>trajectory generation methods for aggressive maneuvers</strong>.
   </p>
   <p>
-    My broader goal is to develop control and planning methods that remain practical when models are imperfect, actuation is limited, and experiments need to work beyond simulation.
+    My broader goal is to develop <strong>control and planning methods that remain practical beyond simulation</strong>, especially when models are imperfect, actuation is limited, and experiments must work on physical platforms.
   </p>
 </section>
 
 <section id="news" class="home-section">
   <h2>News</h2>
   <ul class="home-list">
-    <li><strong>2024:</strong> Co-authored the Automatica paper <em>Robust nonlinear 3D control of an inverted pendulum balanced on a quadrotor</em>.</li>
-    <li><strong>2021-present:</strong> Working as a Research Assistant in the SCORE Lab, Faculty of Science and Technology, University of Macau.</li>
-    <li><strong>Service:</strong> Reviewer for IEEE TASE, IEEE RA-L, Control Engineering Practice, and IEEE TSMC: Systems.</li>
+    <li><strong>2025.10:</strong> Successfully obtained my <strong>Ph.D. degree</strong> from the <strong>University of Macau</strong>.</li>
+    <li><strong>2025.11:</strong> Joined the <strong>National University of Singapore</strong> as a <strong>Research Fellow</strong>.</li>
+    <li><strong>Service:</strong> Reviewer for <strong>IEEE TASE</strong>, <strong>IEEE RA-L</strong>, <strong>Control Engineering Practice</strong>, and <strong>IEEE TSMC: Systems</strong>.</li>
+    <li><strong>2025.12:</strong> Our manuscript titled <em>Trajectory Generation and Extended High-Gain Observers Based Output Feedback Control for an Underactuated Flying Inverted Pendulum</em> has been accepted for publication in <strong>IEEE TASE</strong>.</li>
   </ul>
 </section>
 
@@ -69,16 +70,17 @@ redirect_from:
 <section id="invited-talks" class="home-section">
   <h2>Invited Talks</h2>
   <div class="talk-card">
-    <p>
-      Invited talk information is being updated. If you would like to invite me for a seminar or research discussion on aerial robotics, nonlinear control, or experimental robotic systems, please feel free to get in touch.
-    </p>
+    <ul class="home-list home-list--talks">
+      <li><strong>2025.10.26:</strong> Oral talk at <strong>Workshop on Advanced Aerial Robotics</strong>, University of Tokyo.</li>
+      <li><strong>2022:</strong> Oral talk at the <strong>41st Chinese Control Conference (CCC)</strong>.</li>
+    </ul>
   </div>
 </section>
 
 <section class="home-section home-section--stats">
   <h2>Statistics</h2>
-  <div class="metrics-grid">
-    <article class="metric-card">
+  <div class="stats-layout">
+    <article class="metric-card metric-card--scholar">
       <p class="metric-card__label">Google Scholar</p>
       {% if site.data.scholar and site.data.scholar.citations %}
       <p class="metric-card__value">{{ site.data.scholar.citations }}</p>
@@ -91,15 +93,19 @@ redirect_from:
       <p class="metric-card__meta">{{ site.author.scholar_note }}</p>
       {% endif %}
     </article>
-    <article class="metric-card">
-      <p class="metric-card__label">Site Visits</p>
-      <p class="metric-card__value"><span id="busuanzi_value_site_pv">--</span></p>
-      <p class="metric-card__meta">Total page views</p>
-    </article>
-    <article class="metric-card">
-      <p class="metric-card__label">Visitors</p>
-      <p class="metric-card__value"><span id="busuanzi_value_site_uv">--</span></p>
-      <p class="metric-card__meta">Unique visitors</p>
+    <article class="metric-card metric-card--map">
+      <p class="metric-card__label">Visitor Locations</p>
+      {% if site.clustrmaps.widget_page and site.clustrmaps.widget_image %}
+      <a class="visitor-map" href="{{ site.clustrmaps.widget_page }}" aria-label="ClustrMaps visitor locations">
+        <img src="{{ site.clustrmaps.widget_image }}" alt="ClustrMaps visitor location map">
+      </a>
+      <p class="metric-card__meta">Visitor locations from ClustrMaps.</p>
+      {% else %}
+      <div class="visitor-map visitor-map--placeholder">
+        <p class="visitor-map__placeholder-title">ClustrMaps widget ready</p>
+        <p class="metric-card__meta">{{ site.clustrmaps.note }}</p>
+      </div>
+      {% endif %}
     </article>
   </div>
 </section>
