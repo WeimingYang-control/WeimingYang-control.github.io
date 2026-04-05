@@ -114,7 +114,7 @@ redirect_from:
     <article class="metric-card metric-card--map">
       <p class="metric-card__label">Visitor Locations</p>
       {% if site.clustrmaps.widget_page and site.clustrmaps.widget_image %}
-      <a class="visitor-map" href="{{ site.clustrmaps.widget_page }}" aria-label="Visitor location map">
+      <a class="visitor-map visitor-map--compact" href="{{ site.clustrmaps.widget_page }}" aria-label="Visitor location map">
         <img src="{{ site.clustrmaps.widget_image }}" alt="Visitor location map">
       </a>
       <p class="metric-card__meta">Visitor locations from the site map.</p>
@@ -128,4 +128,3 @@ redirect_from:
     </article>
   </div>
 </section>
-
