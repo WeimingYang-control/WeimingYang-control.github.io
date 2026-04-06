@@ -5,12 +5,23 @@
   }
 
   .sidebar {
-    width: 20%;
+    float: left;
+    width: 220px;
   }
 
   .page {
-    width: 76%;
-    margin-left: 4%;
+    float: right;
+    width: calc(100% - 250px);
+    margin-left: 0;
+    padding-right: 0;
+  }
+
+  .page .page__inner-wrap {
+    max-width: none;
+  }
+
+  .page .page__content {
+    max-width: none;
   }
 }
 
